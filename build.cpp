@@ -42,6 +42,8 @@ int main(){
 
 			buildScript<< "mv *.o ../obj" << newline;
 			buildScript<< "mv run ../ " << newline;
+			buildScript<< "cp ../run ../test/" << newline;
+			buildScript<< "touch ../test/testOutput.txt" << newline;
 		}
 
 		buildList.close(); // buildList
